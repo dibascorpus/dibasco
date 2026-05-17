@@ -72,6 +72,53 @@
   <p class="authors">Dmitri Sitchinava, Kirill Kozhanov, Danguolė Kotryna Kapkan, Ilja Seržant</p>
 
   <main>
+<h2>Introduction</h2>
+
+  <p>
+    This document describes the procedure for creating a
+    <a href="https://universaldependencies.org/">Universal Dependencies</a>
+    annotated corpus of Latgalian dialectal oral texts. The corpus is designed
+    as a linguistically annotated resource for the study of the vocabulary,
+    grammar, and discourse structure of spoken Latgalian.
+  </p>
+
+  <p>
+    The corpus may be used for research on lexical and grammatical variation
+    in oral dialectal texts. At the same time, the use of a unified
+    token-based annotation format makes the resource suitable for comparative
+    and typological studies, including studies that require interoperable
+    morphosyntactic annotation across languages and dialects.
+  </p>
+
+  <p>
+    The corpus is maintained in two parallel and synchronized formats. The
+    first format is <a href="https://universaldependencies.org/format.html">CoNLL-U</a>,
+    which is used for Universal Dependencies publication, validation, and
+    subsequent model training. The second format consists of annotation tiers
+    in <a href="https://archive.mpi.nl/tla/elan">ELAN</a>, where the text is
+    synchronized with the original audio signal and where transcription,
+    segmentation, pauses, speaker turns, and other oral-text features are
+    preserved.
+  </p>
+
+  <p>
+    At the final stage, the morphosyntactic annotation produced and corrected
+    in CoNLL-U, together with the normalized Latvian text, is copied back into
+    ELAN as additional annotation tiers. This makes it possible to use both
+    formats in parallel: CoNLL-U for UD-compatible morphosyntactic annotation
+    and model training, and ELAN for audio-aligned corpus work and further
+    linguistic analysis.
+  </p>
+
+  <p>
+    Most currently available Universal Dependencies treebanks are based on
+    written language, and many existing parsing models have therefore been
+    trained primarily on standard written syntax. Nevertheless, there is a
+    growing line of UD corpora based on spoken language, including corpora
+    derived from field recordings and oral narratives. The Latgalian corpus is
+    intended to contribute to this spoken-language direction within the UD
+    framework.
+  </p>
     <h2>ELAN</h2>
 
     <p>The annotation workflow starts from the <strong>audio recording and transcription</strong>. The WAV file and the primary transcription are imported into <a href="https://archive.mpi.nl/tla/elan">ELAN</a>, where the transcription is synchronized with the audio signal. Speaker turns, pauses, hesitation phenomena, interrupted words, unclear fragments, and interviewer/interviewee boundaries are marked at this stage. The result is an ELAN file in which the oral text is time-aligned and segmented into analyzable discourse units.</p>
